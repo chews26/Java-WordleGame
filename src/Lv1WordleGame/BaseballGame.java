@@ -27,52 +27,53 @@ public class BaseballGame {
 
     public void play() {
         while (true) {
+            try {
+                // 1. 유저에게 입력값을 받음
+                System.out.println("세자리 숫자를 입력하세요.");
+                int number = sc.nextInt();
 
-            // 1. 유저에게 입력값을 받음
-            System.out.println("세자리 숫자를 입력하세요.");
-            int number = sc.nextInt();
-
-            // 배열에 저장하기 위해 int -> String으로 변환
-            String inputString = String.valueOf(number);
-
-            // 배열에 저장
-            for (int i = 0; i < 3; i++) {
-                inputHashSet.add(inputString.charAt(i) - '0');
-            }
-
-            ArrayList<Integer> randomArrayList = new ArrayList<Integer>(randomHashSet);
-            System.out.println("디버그 용 : " + randomArrayList); //디버그 용
+                // 배열에 저장하기 위해 int -> String으로 변환
+                String inputString = String.valueOf(number);
 
 
-            ArrayList<Integer> inputArrayList = new ArrayList<Integer>(inputHashSet);
-            System.out.println("디버그 용 : " + inputHashSet); //디버그 용
-
-
-            // 2. 올바른 입력값을 받았는지 검증
-            // 3. 게임 진행횟수 증가
-
-            // 5. 정답여부 확인, 만약 정답이면 break 를 이용해 반복문 탈출
-            if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
-                System.out.println("축하합니다 정답입니다!!!");
-                break;
-            }
-
-
-            // 4. 스트라이크 개수 계산
-            int strikeCount = 0;
-            int ballCount = 0;
-            for (int i = 0; i < 3; i++) {
-                if (randomArrayList.get(i).equals(inputArrayList.get(i))) {
-                    strikeCount++;
-                } else if (randomArrayList.contains(inputArrayList.get(i))) {
-                    ballCount++;
+                // 배열에 저장
+                for (int i = 0; i < 3; i++) {
+                    inputHashSet.add(inputString.charAt(i) - '0');
                 }
-            }
-            System.out.println(strikeCount + " 스트라이크");
-            System.out.println(ballCount + " 볼");
+
+                ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet);
+                System.out.println("디버그 용 : " + randomArrayList); //디버그 용
 
 
-            // 6. 볼 개수 계산
+                ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
+                System.out.println("디버그 용 : " + inputHashSet); //디버그 용
+
+
+                // 2. 올바른 입력값을 받았는지 검증
+                // 3. 게임 진행횟수 증가
+
+                // 5. 정답여부 확인, 만약 정답이면 break 를 이용해 반복문 탈출
+                if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
+                    System.out.println("축하합니다 정답입니다!!!");
+                    break;
+                }
+
+
+                // 4. 스트라이크 개수 계산
+                int strikeCount = 0;
+                int ballCount = 0;
+                for (int i = 0; i < 3; i++) {
+                    if (randomArrayList.get(i).equals(inputArrayList.get(i))) {
+                        strikeCount++;
+                    } else if (randomArrayList.contains(inputArrayList.get(i))) {
+                        ballCount++;
+                    }
+                }
+                System.out.println(strikeCount + " 스트라이크");
+                System.out.println(ballCount + " 볼");
+
+
+                // 6. 볼 개수 계산
 //            int ballCount = 0;
 //            for (int i = 0; i < 3; i++) {
 //                if (randomArrayList.contains(inputArrayList.get(i))) {
@@ -81,24 +82,32 @@ public class BaseballGame {
 //            }
 //            System.out.println(ballCount + " 볼");
 
-            // 7. 힌트 출력
+                // 7. 힌트 출력
 
-            // 입력 인덱스 값 초기화
+                // 입력 인덱스 값 초기화
                 inputHashSet.clear();
                 inputArrayList.clear();
                 System.out.println("---------------------------");
+
+            } catch (InputMismatchException e) {
+                System.out.println("유효하지 않은 입력입니다. 숫자를 입력하세요");
+                sc.nextLine();
+            } catch (IllegalArgumentException  e) {
+                System.out.println(e.getMessage());
+            } catch (NullPointerException e) {
+                System.out.println("값을 입력해 주세요");
             }
         }
-
-
-    public HashSet<Integer> getInputHashSet() {
-        return inputHashSet;
-    }
-
-    public HashSet<Integer> getRandomAnswerArr() {
-        return randomHashSet;
     }
 }
+//    public HashSet<Integer> getInputHashSet() {
+//        return inputHashSet;
+//    }
+//
+//    public HashSet<Integer> getRandomAnswerArr() {
+//        return randomHashSet;
+//    }
+//}
 // 게임 진행횟수 반환
 //    }
 //

@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment="">
+    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":art: 추가 : 배열 수정 및 게임 로직 구성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,9 @@
     "accountId": "5c409a26-cf0a-4ac4-ba39-4cfe4120bd43"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
@@ -82,8 +84,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729474936731</updated>
-      <workItem from="1729474937690" duration="26533000" />
+      <workItem from="1729474937690" duration="28846000" />
     </task>
+    <task id="LOCAL-00001" summary=":art: 추가 : 배열 수정 및 게임 로직 구성">
+      <option name="closed" value="true" />
+      <created>1729509334496</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729509334496</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +110,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":art: 추가 : 배열 수정 및 게임 로직 구성" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 추가 : 배열 수정 및 게임 로직 구성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
