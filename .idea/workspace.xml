@@ -1,15 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment="" />
+    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "chews26"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/chews26/WordleGame.git",
+    "accountId": "5c409a26-cf0a-4ac4-ba39-4cfe4120bd43"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
@@ -22,11 +53,17 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "day1",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/intellij_java/WordleGame/src/Main.java",
-    "vue.rearranger.settings.migration": "true"
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.Main.executor": "Run"
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -45,21 +82,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729474936731</updated>
-      <workItem from="1729474937690" duration="1000" />
+      <workItem from="1729474937690" duration="26533000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
