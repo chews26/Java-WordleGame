@@ -6,14 +6,35 @@ import java.util.Scanner;
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-        BaseballGame baseballGamest = new BaseballGame();
-
+        BaseballGame baseballGame = new BaseballGame();
         Scanner sc = new Scanner(System.in);
-        // 1. 유저에게 입력값을 받기
 
-        System.out.println("<<<<Wordle 게임을 시작합니다.>>>>");
+        System.out.println("============ 숫자 야구 게임! ============");
 
-        baseballGamest.play();
+        game:
+        while (true) {
+            System.out.println("< 환영합니다. 원하시는 번호를 입력해주세요. >");
+            System.out.println("1. 게임 시작하기 2. 게임 기록 보기, 3. 종료하기.");
+            int choice = sc.nextInt();
+            sc.nextLine();
+
+            switch (choice) {
+                case 1:
+                    System.out.println("< 숫자 야구 게임을 시작합니다. >");
+                    baseballGame.makeRandomAnswer();
+                    baseballGame.play();
+
+                    continue;
+                case 2:
+                    System.out.println("< Wordle 게임을 기록 보기 >");
+                    baseballGame.validateInput();
+                    continue;
+                case 3:
+                    System.out.println("< 게임을 종료합니다. >");
+                    break game;
+            }
+        }
+        System.out.println("---------------------------");
     }
 }
 
