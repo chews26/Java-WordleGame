@@ -28,6 +28,7 @@ public class Main {
                 case 2:
                     System.out.println("< Wordle 게임을 기록 보기 >");
                     baseballGame.validateInput();
+                    System.out.println("===============================================");
                     continue;
                 case 3:
                     System.out.println("< 게임을 종료합니다. >");

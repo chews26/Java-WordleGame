@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":art: 추가 : try-catch 미반영 코드 추가 적용">
+    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":art: 추가 : 게임 재시도 횟수 count 기능 추가 및 성공 후 배열이 초기화 되지 않는 문제 해결">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/intellij_java/WordleGame/src/Main.java",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
     "vue.rearranger.settings.migration": "true",
     "애플리케이션.Main.executor": "Run"
   }
@@ -87,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1729474936731</updated>
       <workItem from="1729474937690" duration="32066000" />
-      <workItem from="1729557136690" duration="17292000" />
+      <workItem from="1729557136690" duration="24865000" />
     </task>
     <task id="LOCAL-00001" summary=":art: 추가 : 배열 수정 및 게임 로직 구성">
       <option name="closed" value="true" />
@@ -113,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729565813311</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=":art: 추가 : 게임 재시도 횟수 count 기능 추가 및 성공 후 배열이 초기화 되지 않는 문제 해결">
+      <option name="closed" value="true" />
+      <created>1729582572211</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1729582572211</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +142,8 @@
     <MESSAGE value=":art: 추가 : 배열 수정 및 게임 로직 구성" />
     <MESSAGE value=":art: 추가 : try-catch 추가하여 에러 메세지 출력" />
     <MESSAGE value=":art: 추가 : try-catch 미반영 코드 추가 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 추가 : try-catch 미반영 코드 추가 적용" />
+    <MESSAGE value=":art: 추가 : 게임 재시도 횟수 count 기능 추가 및 성공 후 배열이 초기화 되지 않는 문제 해결" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 추가 : 게임 재시도 횟수 count 기능 추가 및 성공 후 배열이 초기화 되지 않는 문제 해결" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
