@@ -12,6 +12,7 @@ public class Main {
         // 1. 유저에게 입력값을 받기
 
         System.out.println("<<<<Wordle 게임을 시작합니다.>>>>");
+
         baseballGamest.play();
     }
 }

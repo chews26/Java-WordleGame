@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":art: 추가 : 배열 수정 및 게임 로직 구성">
+    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":art: 추가 : try-catch 추가하여 에러 메세지 출력">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/BaseballGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lv1WordleGame/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,35 +18,36 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Exception" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="day1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "chews26"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;chews26&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/chews26/WordleGame.git",
-    "accountId": "5c409a26-cf0a-4ac4-ba39-4cfe4120bd43"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chews26/WordleGame.git&quot;,
+    &quot;accountId&quot;: &quot;5c409a26-cf0a-4ac4-ba39-4cfe4120bd43&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2nj84e0qlSOgPWdxKRksM6zTT5Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -56,7 +58,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "day1",
+    "git-widget-placeholder": "day2",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -84,7 +86,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729474936731</updated>
-      <workItem from="1729474937690" duration="28846000" />
+      <workItem from="1729474937690" duration="32066000" />
+      <workItem from="1729557136690" duration="5088000" />
     </task>
     <task id="LOCAL-00001" summary=":art: 추가 : 배열 수정 및 게임 로직 구성">
       <option name="closed" value="true" />
@@ -94,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729509334496</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":art: 추가 : try-catch 추가하여 에러 메세지 출력">
+      <option name="closed" value="true" />
+      <created>1729511310229</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729511310229</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +124,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":art: 추가 : 배열 수정 및 게임 로직 구성" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 추가 : 배열 수정 및 게임 로직 구성" />
+    <MESSAGE value=":art: 추가 : try-catch 추가하여 에러 메세지 출력" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 추가 : try-catch 추가하여 에러 메세지 출력" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
