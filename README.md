@@ -1,5 +1,5 @@
 # ⚾ JAVA 숫자야구게임 ⚾
-### 💻 [숫자야구게임 코드 작성내용 바로가기](https://github.com/chews26/WordleGame/tree/main/src/Lv1WordleGame)
+### 💻 [숫자야구게임 코드 작성내용 바로가기](https://github.com/chews26/WordleGame/tree/main/src/WordleGame/leveled)
 ### 🏡 [숫자야구게임 블로그 작성 내용 바로가기](https://shinelee26.tistory.com/tag/java%20%EC%88%AB%EC%9E%90%EC%95%BC%EA%B5%AC%EA%B2%8C%EC%9E%84)
 
 ## 구현 내용
