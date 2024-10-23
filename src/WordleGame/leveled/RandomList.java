@@ -1,4 +1,4 @@
-package WordleGame.leveling;
+package WordleGame.leveled;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

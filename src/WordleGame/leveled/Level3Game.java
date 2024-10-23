@@ -1,23 +1,23 @@
-package WordleGame.leveling;
+package WordleGame.leveled;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
-public class FourDigitGame extends GamePlay {
+public class Level3Game extends GamePlay {
     @Override
-    public void Gameplay() {
-        int levelNum = 4;
+    public void gamePlay() {
+        int levelNum = 5;
 
         while (true) {
             try {
                 // 유저에게 입력값을 받음
-                System.out.println("네자리 숫자를 입력하세요.");
+                System.out.println("다섯자리 숫자를 입력하세요.");
                 int number = sc.nextInt();
 
-                // 네자리 숫자가 아닐 경우 알림
-                if (number < 1000 || number > 9999) {
-                    System.out.println("네자리 숫자가 아닌 값은 입력할 수 없습니다.");
+                // 다섯자리 숫자가 아닐 경우 알림
+                if (number < 10000 || number > 99999) {
+                    System.out.println("세자리 숫자가 아닌 값은 입력할 수 없습니다.");
                     System.out.println("---------------------------");
                     continue;
                 }
@@ -47,24 +47,21 @@ public class FourDigitGame extends GamePlay {
                     continue;
                 }
 
-                ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet2);
-                System.out.println("디버그 용 : " + randomArrayList); //디버그 용
-
+                ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet3);
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
-                System.out.println("디버그 용 : " + inputHashSet); //디버그 용
 
                 if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
                     System.out.println("축하합니다 정답입니다!!!");
                     System.out.println("===============================================");
                     inputHashSet.clear();
-                    randomHashSet2.clear();
+                    randomHashSet3.clear();
                     sc.nextLine();
 
                     // 랜덤값 재생성
-                    makeRandomAnswerLevel2();
+                    makeRandomAnswerLevel3();
 
-                    super.tryCountArr2.add(super.tryCount2);
-                    super.tryCount2 = 0;
+                    tryCountArr3.add(tryCount3);
+                    tryCount3 = 0;
                     break;
                 }
 
@@ -91,7 +88,7 @@ public class FourDigitGame extends GamePlay {
                 }
 
                 // try count 구하기
-                super.tryCount2++;
+                tryCount3++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();
@@ -108,10 +105,10 @@ public class FourDigitGame extends GamePlay {
             }
         }
     }
-    public void Gameresult () {
-        System.out.println("Lv2 게임기록");
-        for (int i = 0; i < tryCountArr2.size(); i++) {
-            System.out.println((i + 1) + "번째 게임 : " + tryCountArr2.get(i) + "회 시도 후 성공");
+    public void gameResult() {
+        System.out.println("Lv3 게임 기록");
+        for (int i = 0; i < tryCountArr3.size(); i++) {
+            System.out.println((i + 1) + "번째 게임 : " + tryCountArr3.get(i) + "회 시도 후 성공");
         }
     }
 }

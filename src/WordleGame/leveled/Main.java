@@ -1,15 +1,13 @@
-package WordleGame.leveling;
+package WordleGame.leveled;
 
 import java.util.Scanner;
 
-//TIP 코드를 <b>실행</b>하려면 <shortcut actionId="Run"/>을(를) 누르거나
-// 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
         RandomList randomList = new RandomList();
-        GamePlay levelOne = new ThreeDigitGame();
-        GamePlay levelTwo = new FourDigitGame();
-        GamePlay levelThree = new FiveDigitGame();
+        GamePlay levelOne = new Level1Game();
+        GamePlay levelTwo = new Level2Game();
+        GamePlay levelThree = new Level3Game();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("============ 숫자 야구 게임! ============");
@@ -30,22 +28,22 @@ public class Main {
                     switch (choiceLevel) {
                         case 1:
                             randomList.makeRandomAnswerLevel1();
-                            levelOne.Gameplay();
+                            levelOne.gamePlay();
                             continue;
                         case 2:
                             randomList.makeRandomAnswerLevel2();
-                            levelTwo.Gameplay();
+                            levelTwo.gamePlay();
                             continue;
                         case 3:
                             randomList.makeRandomAnswerLevel3();
-                            levelThree.Gameplay();
+                            levelThree.gamePlay();
                             continue;
                     }
                 case 2:
                     System.out.println("< Wordle 게임을 기록 보기 >");
-                    levelOne.Gameresult();
-                    levelTwo.Gameresult();
-                    levelThree.Gameresult();
+                    levelOne.gameResult();
+                    levelTwo.gameResult();
+                    levelThree.gameResult();
                     System.out.println("===============================================");
                     continue;
                 case 3:
