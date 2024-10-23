@@ -23,6 +23,7 @@ public class Main {
                 case 1:
                     System.out.println("< 숫자 야구 게임을 시작합니다. >");
                     System.out.println("게임 난이도를 설정해주세요.");
+                    System.out.println("1. level1   2. level2   3. level3 ");
                     int choiceLevel = sc.nextInt();
                     sc.nextLine();
                     switch (choiceLevel) {

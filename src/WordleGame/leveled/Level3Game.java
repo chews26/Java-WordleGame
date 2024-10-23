@@ -60,8 +60,8 @@ public class Level3Game extends GamePlay {
                     // 랜덤값 재생성
                     makeRandomAnswerLevel3();
 
-                    tryCountArr3.add(tryCount3);
-                    tryCount3 = 0;
+                    tryCountArr3.add(tryCount);
+                    tryCount = 0;
                     break;
                 }
 
@@ -88,7 +88,7 @@ public class Level3Game extends GamePlay {
                 }
 
                 // try count 구하기
-                tryCount3++;
+                tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();

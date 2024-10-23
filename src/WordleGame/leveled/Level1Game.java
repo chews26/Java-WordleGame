@@ -62,8 +62,8 @@ public class Level1Game extends GamePlay {
                     makeRandomAnswerLevel1();
 
                     // 게임 횟수 저장
-                    super.tryCountArr1.add(super.tryCount1);
-                    super.tryCount1 = 0;
+                    super.tryCountArr1.add(super.tryCount);
+                    super.tryCount = 0;
                     break;
                 }
 
@@ -90,7 +90,7 @@ public class Level1Game extends GamePlay {
                 }
 
                 // try count 구하기
-                super.tryCount1++;
+                super.tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();

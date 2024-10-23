@@ -4,9 +4,7 @@ package WordleGame.leveled;
 // 추상메서드로 게임 레벨별로 분기가 가능하게 설정
 abstract class GamePlay extends RandomList {
 
-    protected int tryCount1 = 0;
-    protected int tryCount2 = 0;
-    protected int tryCount3 = 0;
+    protected int tryCount = 0;
 
     public abstract void gamePlay();
 

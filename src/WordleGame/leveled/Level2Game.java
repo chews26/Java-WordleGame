@@ -61,8 +61,8 @@ public class Level2Game extends GamePlay {
                     // 랜덤값 재생성
                     makeRandomAnswerLevel2();
 
-                    super.tryCountArr2.add(super.tryCount2);
-                    super.tryCount2 = 0;
+                    super.tryCountArr2.add(super.tryCount);
+                    super.tryCount = 0;
                     break;
                 }
 
@@ -89,7 +89,7 @@ public class Level2Game extends GamePlay {
                 }
 
                 // try count 구하기
-                super.tryCount2++;
+                super.tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();
