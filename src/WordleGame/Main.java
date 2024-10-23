@@ -1,4 +1,4 @@
-package Lv1WordleGame;
+package WordleGame;
 
 import java.util.Scanner;
 
