@@ -4,15 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":zap: 추가 및 수정 : 레벨링(lv4) 기능 추가 작성 및 Class 추가">
+    <list default="true" id="49876a03-3e9b-4835-b7d3-14b7605f7045" name="변경" comment=":truck: 수정 : 파일 이름 수정, 필요 없는 주석 삭제, 카멜표기법 적용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/BaseballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/FiveDigitGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/FiveDigitGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/FourDigitGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/FourDigitGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/GamePlay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/GamePlay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Level1Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Level1Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Level2Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Level2Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Level3Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Level3Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,8 @@
     "settings.editor.selected.configurable": "editor.preferences.completion",
     "vue.rearranger.settings.migration": "true",
     "애플리케이션.Main.executor": "Run",
-    "애플리케이션.WordleGame.leveling.Main.executor": "Debug",
+    "애플리케이션.WordleGame.leveled.Main.executor": "Run",
+    "애플리케이션.WordleGame.leveling.Main.executor": "Run",
     "애플리케이션.WordleGame.makeClass.Main.executor": "Debug"
   }
 }]]></component>
@@ -86,11 +85,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordleGame.Main" />
+      <option name="MAIN_CLASS_NAME" value="WordleGame.unleveled.Main" />
       <module name="WordleGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="WordleGame.*" />
+          <option name="PATTERN" value="WordleGame.unleveled.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,7 +122,7 @@
       <workItem from="1729474937690" duration="32066000" />
       <workItem from="1729557136690" duration="30439000" />
       <workItem from="1729641192554" duration="18884000" />
-      <workItem from="1729669538168" duration="731000" />
+      <workItem from="1729669538168" duration="3914000" />
     </task>
     <task id="LOCAL-00001" summary=":art: 추가 : 배열 수정 및 게임 로직 구성">
       <option name="closed" value="true" />
@@ -173,7 +172,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729668445802</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":bug: 버그수정 및 변경 : tryCount 변수에 접근할 수 없었던 문제 해결, 새 게임 시 RandomHashSet에 값이 입력되지 않는 문제 해결, 파일 이름 수정">
+      <option name="closed" value="true" />
+      <created>1729670746919</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729670746919</updated>
+    </task>
+    <task id="LOCAL-00008" summary=":truck: 수정 : 파일 이름 수정, 필요 없는 주석 삭제, 카멜표기법 적용">
+      <option name="closed" value="true" />
+      <created>1729673304328</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1729673304328</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +200,16 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/day3" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="day3" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/master" />
@@ -205,7 +230,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="day2" />
+                        <option value="origin/day3" />
                       </list>
                     </value>
                   </entry>
@@ -224,7 +249,9 @@
     <MESSAGE value=":art: 추가 : 게임 재시도 횟수 count 기능 추가 및 성공 후 배열이 초기화 되지 않는 문제 해결" />
     <MESSAGE value=":art: 수정 : println 으로 오류메세지 출력하도록 수정" />
     <MESSAGE value=":zap: 추가 및 수정 : 레벨링(lv4) 기능 추가 작성 및 Class 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value=":zap: 추가 및 수정 : 레벨링(lv4) 기능 추가 작성 및 Class 추가" />
+    <MESSAGE value=":bug: 버그수정 및 변경 : tryCount 변수에 접근할 수 없었던 문제 해결, 새 게임 시 RandomHashSet에 값이 입력되지 않는 문제 해결, 파일 이름 수정" />
+    <MESSAGE value=":truck: 수정 : 파일 이름 수정, 필요 없는 주석 삭제, 카멜표기법 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value=":truck: 수정 : 파일 이름 수정, 필요 없는 주석 삭제, 카멜표기법 적용" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -234,158 +261,9 @@
           <option name="timeStamp" value="5" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/BaseballGame.java</url>
+          <url>file://$PROJECT_DIR$/src/WordleGame/unleveled/BaseballGame.java</url>
           <line>117</line>
           <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java</url>
-          <line>68</line>
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="100" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="102" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="103" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/Main.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="111" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/Main.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="113" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/Main.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/BaseballGame.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>21</line>
-          <properties class="WordleGame.leveling.BaseballGame" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="101" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>28</line>
-          <properties class="WordleGame.leveling.BaseballGame" method="makeRandomAnswerLevel1">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="105" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>36</line>
-          <properties class="WordleGame.leveling.BaseballGame" method="makeRandomAnswerLevel2">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/BaseballGame.java</url>
-          <line>44</line>
-          <properties class="WordleGame.leveling.BaseballGame" method="makeRandomAnswerLevel3">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/Main.java</url>
-          <line>7</line>
-          <properties class="WordleGame.leveling.Main" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="112" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/BaseballGame.java</url>
-          <line>30</line>
-          <properties class="WordleGame.BaseballGame" method="play">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java</url>
-          <line>12</line>
-          <properties class="WordleGame.leveling.GamePlay" method="Gameresult">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java</url>
-          <line>14</line>
-          <properties class="WordleGame.leveling.GamePlay" method="Gameplay">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/ThreeDigitGame.java</url>
-          <line>113</line>
-          <properties class="WordleGame.leveling.ThreeDigitGame" method="Gameresult">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java</url>
-          <line>8</line>
-          <properties field="tryCount1" class="WordleGame.leveling.GamePlay" />
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java</url>
-          <line>9</line>
-          <properties field="tryCount2" class="WordleGame.leveling.GamePlay" />
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/WordleGame/leveling/GamePlay.java</url>
-          <line>10</line>
-          <properties field="tryCount3" class="WordleGame.leveling.GamePlay" />
-          <option name="timeStamp" value="110" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

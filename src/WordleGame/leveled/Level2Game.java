@@ -1,12 +1,12 @@
-package WordleGame.leveling;
+package WordleGame.leveled;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
-public class FourDigitGame extends GamePlay {
+public class Level2Game extends GamePlay {
     @Override
-    public void Gameplay() {
+    public void gamePlay() {
         int levelNum = 4;
 
         while (true) {
@@ -48,10 +48,8 @@ public class FourDigitGame extends GamePlay {
                 }
 
                 ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet2);
-                System.out.println("디버그 용 : " + randomArrayList); //디버그 용
-
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
-                System.out.println("디버그 용 : " + inputHashSet); //디버그 용
+
 
                 if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
                     System.out.println("축하합니다 정답입니다!!!");
@@ -63,8 +61,8 @@ public class FourDigitGame extends GamePlay {
                     // 랜덤값 재생성
                     makeRandomAnswerLevel2();
 
-                    super.tryCountArr2.add(super.tryCount2);
-                    super.tryCount2 = 0;
+                    super.tryCountArr2.add(super.tryCount);
+                    super.tryCount = 0;
                     break;
                 }
 
@@ -91,7 +89,7 @@ public class FourDigitGame extends GamePlay {
                 }
 
                 // try count 구하기
-                super.tryCount2++;
+                super.tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();
@@ -108,7 +106,7 @@ public class FourDigitGame extends GamePlay {
             }
         }
     }
-    public void Gameresult () {
+    public void gameResult() {
         System.out.println("Lv2 게임기록");
         for (int i = 0; i < tryCountArr2.size(); i++) {
             System.out.println((i + 1) + "번째 게임 : " + tryCountArr2.get(i) + "회 시도 후 성공");

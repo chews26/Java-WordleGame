@@ -1,12 +1,12 @@
-package WordleGame.leveling;
+package WordleGame.leveled;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 
-public class ThreeDigitGame extends GamePlay {
+public class Level1Game extends GamePlay {
     @Override
-    public void Gameplay() {
+    public void gamePlay() {
         int levelNum = 3;
 
         while (true) {
@@ -27,13 +27,13 @@ public class ThreeDigitGame extends GamePlay {
 
 
                 // Hashset 배열에 저장 후 정수로 변환
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < levelNum; i++) {
                     int value = inputString.charAt(i) - '0';
                     inputHashSet.add(value);
                 }
 
                 // 중복 값 알림
-                if (inputHashSet.size() < 3) {
+                if (inputHashSet.size() < levelNum) {
                     System.out.println("중복된 숫자가 있습니다. 서로 다른 숫자를 입력해주세요.");
                     System.out.println("---------------------------");
                     inputHashSet.clear();
@@ -48,10 +48,7 @@ public class ThreeDigitGame extends GamePlay {
                 }
 
                 ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet1);
-                System.out.println("디버그 용 : " + randomArrayList); //디버그 용
-
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
-                System.out.println("디버그 용 : " + inputHashSet); //디버그 용
 
 
                 if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
@@ -65,8 +62,8 @@ public class ThreeDigitGame extends GamePlay {
                     makeRandomAnswerLevel1();
 
                     // 게임 횟수 저장
-                    super.tryCountArr1.add(super.tryCount1);
-                    super.tryCount1 = 0;
+                    super.tryCountArr1.add(super.tryCount);
+                    super.tryCount = 0;
                     break;
                 }
 
@@ -74,7 +71,7 @@ public class ThreeDigitGame extends GamePlay {
                 String out = "";
                 int strikeCount = 0;
                 int ballCount = 0;
-                for (int i = 0; i < 3; i++) {
+                for (int i = 0; i < levelNum; i++) {
                     if (randomArrayList.get(i).equals(inputArrayList.get(i))) {
                         strikeCount++;
                     } else if (randomArrayList.contains(inputArrayList.get(i))) {
@@ -93,7 +90,7 @@ public class ThreeDigitGame extends GamePlay {
                 }
 
                 // try count 구하기
-                super.tryCount1++;
+                super.tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();
@@ -111,7 +108,7 @@ public class ThreeDigitGame extends GamePlay {
         }
     }
 
-    public void Gameresult () {
+    public void gameResult() {
         System.out.println("Lv1 게임기록");
         for (int i = 0; i < tryCountArr1.size(); i++) {
             System.out.println((i + 1) + "번째 게임 : " + tryCountArr1.get(i) + "회 시도 후 성공");
