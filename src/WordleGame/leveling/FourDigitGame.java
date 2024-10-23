@@ -108,4 +108,11 @@ public class FourDigitGame extends GamePlay {
             }
         }
     }
+    public void Gameresult () {
+        System.out.println("Lv2 게임기록");
+        for (int i = 0; i < tryCountArr2.size(); i++) {
+            System.out.println((i + 1) + "번째 게임 : " + tryCountArr2.get(i) + "회 시도 후 성공");
+        }
+    }
 }
+

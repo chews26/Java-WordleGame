@@ -6,10 +6,10 @@ import java.util.Scanner;
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 public class Main {
     public static void main(String[] args) {
-        BaseballGame baseballGame = new BaseballGame();
-        GamePlay levelThree = new ThreeDigitGame();
-        GamePlay levelFour = new FourDigitGame();
-        GamePlay levelFive = new FiveDigitGame();
+        RandomList randomList = new RandomList();
+        GamePlay levelOne = new ThreeDigitGame();
+        GamePlay levelTwo = new FourDigitGame();
+        GamePlay levelThree = new FiveDigitGame();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("============ 숫자 야구 게임! ============");
@@ -29,21 +29,23 @@ public class Main {
                     sc.nextLine();
                     switch (choiceLevel) {
                         case 1:
-                            baseballGame.makeRandomAnswerLevel1();
-                            levelThree.Gameplay();
+                            randomList.makeRandomAnswerLevel1();
+                            levelOne.Gameplay();
                             continue;
                         case 2:
-                            baseballGame.makeRandomAnswerLevel2();
-                            levelFour.Gameplay();
+                            randomList.makeRandomAnswerLevel2();
+                            levelTwo.Gameplay();
                             continue;
                         case 3:
-                            baseballGame.makeRandomAnswerLevel3();
-                            levelFive.Gameplay();
+                            randomList.makeRandomAnswerLevel3();
+                            levelThree.Gameplay();
                             continue;
                     }
                 case 2:
                     System.out.println("< Wordle 게임을 기록 보기 >");
-                    baseballGame.Gameresult();
+                    levelOne.Gameresult();
+                    levelTwo.Gameresult();
+                    levelThree.Gameresult();
                     System.out.println("===============================================");
                     continue;
                 case 3:

@@ -47,7 +47,7 @@ public class FiveDigitGame extends GamePlay {
                     continue;
                 }
 
-                ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet2);
+                ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet3);
                 System.out.println("디버그 용 : " + randomArrayList); //디버그 용
 
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
@@ -108,4 +108,11 @@ public class FiveDigitGame extends GamePlay {
             }
         }
     }
+    public void Gameresult () {
+        System.out.println("Lv3 게임 기록");
+        for (int i = 0; i < tryCountArr3.size(); i++) {
+            System.out.println((i + 1) + "번째 게임 : " + tryCountArr3.get(i) + "회 시도 후 성공");
+        }
+    }
 }
+
