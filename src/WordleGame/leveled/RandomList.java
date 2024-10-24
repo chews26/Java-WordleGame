@@ -24,9 +24,9 @@ public class RandomList {
 
     // 랜덤 값 생성 (메서드)
     public void makeRandomAnswerLevel1() {
-        Random random2 = new Random();
+        Random random1 = new Random();
         for (int i = 0; randomHashSet1.size() < 3; i++) {
-            int randomNumber = random2.nextInt(9) + 1;
+            int randomNumber = random1.nextInt(9) + 1;
             randomHashSet1.add(randomNumber);
         }
     }
