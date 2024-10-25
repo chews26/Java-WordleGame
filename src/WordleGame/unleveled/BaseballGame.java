@@ -72,7 +72,7 @@ public class BaseballGame {
                 }
 
                 ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet);
-                System.out.println("디버그 용 : " + randomArrayList); //디버그 용
+
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
                 System.out.println("디버그 용 : " + inputHashSet); //디버그 용
 

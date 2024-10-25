@@ -1,19 +1,14 @@
 package WordleGame.leveled;
 
-import java.util.ArrayList;
 import java.util.LinkedHashSet;
 import java.util.Random;
 import java.util.Scanner;
 
 public class RandomList {
     Scanner sc = new Scanner(System.in);
-    protected final LinkedHashSet<Integer> inputHashSet = new LinkedHashSet<>();
     protected final LinkedHashSet<Integer> randomHashSet1 = new LinkedHashSet<>();
     protected final LinkedHashSet<Integer> randomHashSet2 = new LinkedHashSet<>();
     protected final LinkedHashSet<Integer> randomHashSet3 = new LinkedHashSet<>();
-    protected final ArrayList<Integer> tryCountArr1 = new ArrayList<>();
-    protected final ArrayList<Integer> tryCountArr2 = new ArrayList<>();
-    protected final ArrayList<Integer> tryCountArr3 = new ArrayList<>();
 
     // 객체 생성시 정답을 만들도록 함 (생성자)
     public RandomList() {

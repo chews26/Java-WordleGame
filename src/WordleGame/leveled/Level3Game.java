@@ -53,15 +53,13 @@ public class Level3Game extends GamePlay {
                 if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
                     System.out.println("축하합니다 정답입니다!!!");
                     System.out.println("===============================================");
-                    inputHashSet.clear();
-                    randomHashSet3.clear();
-                    sc.nextLine();
+                    inputHashSet.clear(); // 입력값 배열 초기화
+                    randomHashSet3.clear(); // 랜덤값 배열 초기화
+                    sc.nextLine(); // 버퍼 삭제
+                    makeRandomAnswerLevel3(); // 랜덤값 재생성
 
-                    // 랜덤값 재생성
-                    makeRandomAnswerLevel3();
-
-                    tryCountArr3.add(tryCount);
-                    tryCount = 0;
+                    super.tryCountArr3.add(super.tryCount); // 시도 횟수 초기화
+                    super.tryCount = 0;
                     break;
                 }
 
@@ -88,7 +86,7 @@ public class Level3Game extends GamePlay {
                 }
 
                 // try count 구하기
-                tryCount++;
+                super.tryCount++;
 
                 // 입력 인덱스 값 초기화
                 inputHashSet.clear();
@@ -107,8 +105,8 @@ public class Level3Game extends GamePlay {
     }
     public void gameResult() {
         System.out.println("Lv3 게임 기록");
-        for (int i = 0; i < tryCountArr3.size(); i++) {
-            System.out.println((i + 1) + "번째 게임 : " + tryCountArr3.get(i) + "회 시도 후 성공");
+        for (int i = 0; i < super.tryCountArr3.size(); i++) {
+            System.out.println((i + 1) + "번째 게임 : " + super.tryCountArr3.get(i) + "회 시도 후 성공");
         }
     }
 }

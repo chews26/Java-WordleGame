@@ -43,7 +43,7 @@ public class Main {
                                 continue;
                         }
                     case 2:
-                        System.out.println("< Wordle 게임을 기록 보기 >");
+                        System.out.println("< Wordle 게임 기록 보기 >");
                         levelOne.gameResult();
                         levelTwo.gameResult();
                         levelThree.gameResult();

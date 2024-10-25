@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Level2Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Level2Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Level3Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Level3Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/leveled/RandomList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/leveled/RandomList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WordleGame/unleveled/BaseballGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WordleGame/unleveled/BaseballGame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="day2" />
+        <entry key="$PROJECT_DIR$" value="f1a383c0185d53126a863ac1d427594a30a1153d" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,27 +59,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "day3",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/intellij_java/WordleGame/src/WordleGame/makeClass",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/intellij_java/WordleGame/src/Main.java",
-    "settings.editor.selected.configurable": "editor.preferences.completion",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.Main.executor": "Run",
-    "애플리케이션.WordleGame.leveled.Main.executor": "Run",
-    "애플리케이션.WordleGame.leveling.Main.executor": "Run",
-    "애플리케이션.WordleGame.makeClass.Main.executor": "Debug"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;day4&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/intellij_java/WordleGame/src/WordleGame/makeClass&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/intellij_java/WordleGame/src/Main.java&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.Main.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.WordleGame.leveled.Main.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.WordleGame.leveling.Main.executor&quot;: &quot;Run&quot;,
+    &quot;애플리케이션.WordleGame.makeClass.Main.executor&quot;: &quot;Debug&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\intellij_java\WordleGame\src\WordleGame\makeClass" />
@@ -99,6 +101,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.Main" />
         <item itemvalue="애플리케이션.Main" />
       </list>
     </recent_temporary>
@@ -123,6 +126,7 @@
       <workItem from="1729557136690" duration="30439000" />
       <workItem from="1729641192554" duration="18884000" />
       <workItem from="1729669538168" duration="3914000" />
+      <workItem from="1729814435181" duration="2259000" />
     </task>
     <task id="LOCAL-00001" summary=":art: 추가 : 배열 수정 및 게임 로직 구성">
       <option name="closed" value="true" />
@@ -260,11 +264,6 @@
           <properties class="java.lang.IndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="5" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/WordleGame/unleveled/BaseballGame.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
