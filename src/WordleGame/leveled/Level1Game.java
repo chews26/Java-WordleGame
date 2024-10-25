@@ -50,16 +50,13 @@ public class Level1Game extends GamePlay {
                 ArrayList<Integer> randomArrayList = new ArrayList<>(randomHashSet1);
                 ArrayList<Integer> inputArrayList = new ArrayList<>(inputHashSet);
 
-
                 if (Arrays.equals(randomArrayList.toArray(), inputArrayList.toArray())) {
                     System.out.println("축하합니다 정답입니다!!!");
                     System.out.println("===============================================");
-                    inputHashSet.clear();
-                    randomHashSet1.clear();
-                    sc.nextLine();
-
-                    // 랜덤값 재생성
-                    makeRandomAnswerLevel1();
+                    inputHashSet.clear(); // 입력값 배열 초기화
+                    randomHashSet1.clear(); // 랜덤값 배열 초기화
+                    sc.nextLine(); // 버퍼 삭제
+                    makeRandomAnswerLevel1(); // 랜덤값 재생성
 
                     // 게임 횟수 저장
                     super.tryCountArr1.add(super.tryCount);
@@ -110,8 +107,8 @@ public class Level1Game extends GamePlay {
 
     public void gameResult() {
         System.out.println("Lv1 게임기록");
-        for (int i = 0; i < tryCountArr1.size(); i++) {
-            System.out.println((i + 1) + "번째 게임 : " + tryCountArr1.get(i) + "회 시도 후 성공");
+        for (int i = 0; i < super.tryCountArr1.size(); i++) {
+            System.out.println((i + 1) + "번째 게임 : " + super.tryCountArr1.get(i) + "회 시도 후 성공");
         }
     }
 }
